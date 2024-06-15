@@ -5,7 +5,7 @@ import { SocialHistoryComponent } from './components/history/social-history/soci
 import { MuseumMapComponent } from './components/museum-map/museum-map.component';
 
 export const routes: Routes = [
-    {path: "", component: HomeComponent},
+    {path: "https://lambent-torrone-0bac93.netlify.app/", component: HomeComponent},
     {path: "events", component: EventsComponent},
     {path: "history", component: SocialHistoryComponent},
     {path: "map", component: MuseumMapComponent}
