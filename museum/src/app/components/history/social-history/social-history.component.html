@@ -1,0 +1,7 @@
+<div>
+    <span class="home" (click)="redirectToHome()">на главную</span>
+    <div class="history-container">
+        <app-social-history-child [socialHistory]="data[dataId]" [historyId]="dataId"></app-social-history-child>
+        <button (click)="changeDataId()">Продолжить</button>
+    </div>
+</div>

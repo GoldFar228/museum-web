@@ -1,0 +1,31 @@
+.history-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.history-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    padding: 24px 16px;
+    margin-bottom: 100px;
+    color: white;
+    background-color: rgba(102,102,102,0.5);
+    border-radius: 30px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.history-header{
+    text-align: center;
+    
+}
+.history-content{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}

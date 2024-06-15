@@ -1,0 +1,51 @@
+
+<div class="events-container">
+    <div class="events-header-image">
+        <div class="rb">
+            <input type="radio" name="w" id="radio1" (click)="changeImage(1)" checked>
+            <input type="radio" name="w" id="radio2" (click)="changeImage(2)">
+        </div>
+        <img src="assets/event1.png" alt="" id="image">
+        <img src="assets/event2.png" alt="" style="display: none;" id="image2">
+    </div>
+    <div class="events-content-container">
+        <div class="events-content-header">
+            «Театр: люблю и ненавижу»
+        </div>
+        <div class="events-content-description">
+            <div class="events-content-description-item">Жанр: Концерт</div>
+            <div class="events-content-description-item">Возрастное ограничение: 16+</div>
+        </div>
+
+        <div class="events-content-data">
+            <img src="assets/event-info.png" alt="">
+            <div>
+                <div class="events-content-data-header">
+                    <img src="assets/location_on.png" alt="">
+                    Место и время
+                </div>
+
+                <div>24 мая, 19:30</div>
+                <div>
+                    Креативный кластер «Л52»
+                    пр. Ленина, 52
+                </div>
+            </div>
+        </div>
+        <div class="events-content-short-retelling">
+            Актеры Открытого студийного театра обратятся к личному опыту и попытаются разобраться в чувствах по отношению к своему делу. Мир театра не так уж далек от обычной жизни: здесь также по-разному складываются судьбы, сталкиваются амбиции и возможности, возникает горячая увлеченность и болезненное разочарование, сходятся и расходятся разные характеры. Это спектакль-признание в том, что занятие театром вызывает целую гамму чувств, которые, скорее всего, хорошо знакомы тем, кто также пытается реализовать себя в чем-то лично значимом.
+        </div>
+        <div class="events-content-payment">
+            <div class="events-content-payment-header">
+                Стоимость: 400 руб.
+            </div>
+            <div class="buy-button button">
+                Купить билет
+            </div>
+            <div class="book-button button">
+                Забронировать
+            </div>
+        </div>
+    </div>
+</div>
+<app-panel class="panel"></app-panel>
