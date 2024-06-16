@@ -1,9 +1,12 @@
-<div>
-    <div *ngFor="let m of museumMap">
-        <div doubleClick class="map">
-            <img [src]="m" >
-        </div>
+<div class="map-container">
+    <div class="button-container">
+        <button *ngFor="let map of museumMaps; let i = index" [class.active]="i === activeButtonIndex"
+            (click)="showMap(i)">
+            Floor {{ i }}
+        </button>
     </div>
-
+    <div class="map">
+        <img [src]="currentMap">
+    </div>
 </div>
 <app-panel></app-panel>

@@ -12,22 +12,32 @@ import { Router } from '@angular/router';
     imports: [PanelComponent, CommonModule]
 })
 export class MuseumMapComponent {
-  mapService = inject(MuseumMapService)
-  public museumMap: string[] = this.mapService.getData();
+  mapService = inject(MuseumMapService);
+  router = inject(Router);
+  public museumMaps: string[];
+  public currentMap: string;
+  public activeButtonIndex = 0;
   private scale = 1;
 
-  router = inject(Router)
+  constructor(private el: ElementRef, private renderer: Renderer2) {
+    this.museumMaps = this.mapService.getData();
+    this.currentMap = this.museumMaps[0]; // Изначально отображаем первую карту
+  }
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  showMap(index: number): void {
+    if (index >= 0 && index < this.museumMaps.length) {
+      this.currentMap = this.museumMaps[index];
+      this.activeButtonIndex = index; // Обновляем активную кнопку
+    }
+  }
 
-  @HostListener('click', ['$event']) 
-  onDoubleClick(event: MouseEvent) {
-    this.router.navigateByUrl('')
-    this.scale = this.scale === 1 ? 1.5 : 1; 
+  @HostListener('dblclick', ['$event'])
+  onDoubleClick(event: MouseEvent): void {
+    this.scale = this.scale === 1 ? 1.5 : 1;
     this.setScale(this.scale);
   }
 
   private setScale(scale: number): void {
-    this.renderer.setStyle(this.el.nativeElement, 'transform', `scale(${scale})`);
+    this.renderer.setStyle(this.el.nativeElement.querySelector('.map img'), 'transform', `scale(${scale})`);
   }
 }
