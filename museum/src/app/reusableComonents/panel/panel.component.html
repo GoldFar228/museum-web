@@ -1,35 +1,34 @@
 <div class="panel-container">
-    <div class="panel-item" (click)="redirectTo('')">
-        <div class="panel-icon" >
-            <img src="assets/panel-icon.png" alt="">
-        </div>
-        <div>
-            Домой
-        </div>
+    <div class="panel-item" (click)="redirectTo('', 'home')" [ngClass]="{'active': activeItem === 'home'}">
+      <div class="panel-icon">
+        <img [src]="activeItem === 'home' ? 'assets/panel/main(chosen).svg' : 'assets/panel/main.svg'" alt="">
+      </div>
+      <div>
+        Домой
+      </div>
     </div>
-    <div class="panel-item" (click)="redirectTo('/events')">
-        <div class="panel-icon" >
-            <img src="assets/panel-icon.png" alt="">
-        </div>
-        <div>
-            Мероприятие
-        </div>
+    <div class="panel-item" (click)="redirectTo('/map', 'map')" [ngClass]="{'active': activeItem === 'map'}">
+      <div class="panel-icon">
+        <img [src]="activeItem === 'map' ? 'assets/panel/map(chosen).svg' : 'assets/panel/map.svg'" alt="">
+      </div>
+      <div>
+        Карта
+      </div>
     </div>
-    <div class="panel-item" (click)="redirectTo('/history')">
-        <div class="panel-icon">
-            <img src="assets/panel-icon.png" alt="">
-        </div>
-        <div>
-            История
-        </div>
+    <div class="panel-item" (click)="redirectTo('/events', 'statistic')" [ngClass]="{'active': activeItem === 'statistic'}">
+      <div class="panel-icon">
+        <img [src]="activeItem === 'statistic' ? 'assets/panel/statistic(chosen).svg' : 'assets/panel/statistic.svg'" alt="">
+      </div>
+      <div>
+        Статистика
+      </div>
     </div>
-    <div class="panel-item" (click)="redirectTo('map')">
-        <div class="panel-icon" >
-            <img src="assets/panel-icon.png" alt="">
-
-        </div>
-        <div>
-            Карта
-        </div>
+    <div class="panel-item" (click)="redirectTo('/history', 'rules')" [ngClass]="{'active': activeItem === 'rules'}">
+      <div class="panel-icon">
+        <img [src]="activeItem === 'rules' ? 'assets/panel/rules(chosen).svg' : 'assets/panel/rules.svg'" alt="">
+      </div>
+      <div>
+        Правила
+      </div>
     </div>
-</div>
+  </div>
