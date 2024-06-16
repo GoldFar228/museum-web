@@ -9,7 +9,7 @@ export class HistoryService {
     private _historyObjects: SocialHistory[] =
         [{
             id: 1,
-            img: "../../../assets/history/sh1.webp",
+            img: "../../../assets/history/history1.jpg",
             header: "Музей истории Екатеринбурга",
             text: "Сегодня я пойду в Музей истории Екатеринбурга.\
             В нем я узнаю много нового об истории города.\
@@ -20,13 +20,13 @@ export class HistoryService {
         },
         {
             id: 2,
-            img: "../../../assets/history/sh2.webp",
+            img: "../../../assets/history/history2.jpg",
             header: "Вход с улицы",
             text: "Я подойду к двери и открою её, потянув ручку на себя, затем войду в здание музея."
         },
         {
             id: 3,
-            img: "../../../assets/history/sh3.webp",
+            img: "../../../assets/history/history3.jpg",
             header: "Спуск по лестнице",
             text: "Когда я зайду в музей, я увижу лестницу, которая ведет вниз. \
             Я спущусь по ней вниз.\
@@ -34,14 +34,14 @@ export class HistoryService {
         },
         {
             id: 4,
-            img: "../../../assets/history/sh4.webp",
+            img: "../../../assets/history/history4.jpg",
             header: "Вход",
             text: "Когда я спущусь по лестнице вниз, я увижу две двери с надписью «ВХОД». \
             Я войду в одну из дверей, потянув ручку на себя."
         },
         {
             id: 5,
-            img: "../../../assets/history/sh5.webp",
+            img: "../../../assets/history/history5.jpg",
             header: "Касса",
             text: "Когда я зайду внутрь и окажусь в холле музея. \
             Холл находится на 0 этаже. \
@@ -50,14 +50,14 @@ export class HistoryService {
         },
         {
             id: 6,
-            img: "../../../assets/history/sh6.webp",
+            img: "../../../assets/history/history6.jpg",
             header: "Билеты",
             text: "Я возьму билет. \
             Если у меня возникнут вопросы, я задам их человеку на кассе."
         },
         {
             id: 7,
-            img: "../../../assets/history/sh7.webp",
+            img: "../../../assets/history/history7.jpg",
             header: "Карта музея",
             text: "Я внимательно ознакомлюсь с планом музея, в нем написано, что есть в музее. \
             Я сфотографирую план музея на свой телефон или камеру.\
@@ -65,7 +65,7 @@ export class HistoryService {
         },
         {
             id: 8,
-            img: "../../../assets/history/sh8.webp",
+            img: "../../../assets/history/history8.jpg",
             header: "Гардероб",
             text: "В музее есть гардероб. Он находится в холле музея.\
             В гардеробе я могу оставить свою верхнюю одежду.\
@@ -86,14 +86,14 @@ export class HistoryService {
         },
         {
             id: 11,
-            img: "../../../assets/history/sh9.webp",
+            img: "../../../assets/history/history11.jpg",
             header: "Книги",
             text: "В библиотеке я смогу посмотреть интересующие меня книги.\
             После того, как я изучу книги, я поставлю их на место."
         },
         {
             id: 12,
-            img: "../../../assets/history/sh10.webp",
+            img: "../../../assets/history/history12.jpg",
             header: "Турникет",
             text: "Чтобы посмотреть основную выставку музея, нужно отсканировать билет с помощью специального устройства.\
             Я подойду к турникету, который находится напротив кассы или напротив библиотеки.\
@@ -102,14 +102,14 @@ export class HistoryService {
         },
         {
             id: 13,
-            img: "../../../assets/history/sh11.webp",
+            img: "../../../assets/history/history13.jpg",
             header: "Подъём на первый этаж",
             text: "Когда устройство отсканирует мой билет, я смогу пройти через турникет.\
             Я поднимусь по лестнице на первый этаж музея."
         },
         {
             id: 14,
-            img: "../../../assets/history/sh12.webp",
+            img: "../../../assets/history/history14.jpg",
             header: "План залов",
             text: "Когда я поднимусь на 1 этаж, я увижу цветной план залов музея.\
             План первого этажа отмечен серой цифрой 1 внутри белого прямоугольника.\
@@ -119,7 +119,7 @@ export class HistoryService {
         },
         {
             id: 15,
-            img: "../../../assets/history/sh13.webp",
+            img: "../../../assets/history/history15.jpg",
             header: "Туалет",
             text: "Туалет находится в левой части холла первого этажа."
         },
@@ -131,7 +131,7 @@ export class HistoryService {
         },
         {
             id: 17,
-            img: "../../../assets/history/sh14.webp",
+            img: "../../../assets/history/history17.jpg",
             header: "Панорама города",
             text: "В холле первого этажа я увижу большой экран с панорамой города.\
             Напротив панорамы стоит специальный экран, к которому нужно прикоснуться.\
@@ -139,21 +139,21 @@ export class HistoryService {
         },
         {
             id: 18,
-            img: "../../../assets/history/sh15.webp",
+            img: "../../../assets/history/history18.jpg",
             header: "Бюст",
             text: "В холле я увижу бюст Георга Вильгельма де Генина,\
             Я не буду трогать его руками, а буду внимательно смотреть."
         },
         {
             id: 19,
-            img: "../../../assets/history/sh16.webp",
+            img: "../../../assets/history/history19.jpg",
             header: "Проверка билета",
             text: "Когда я зайду в первый зал музея, у меня попросят показать входной билет.\
             Я покажу билет, когда меня попросят."
         },
         {
             id: 20,
-            img: "../../../assets/history/sh17.webp",
+            img: "../../../assets/history/history20.jpg",
             header: "Экран с минералами",
             text: "При входе в зал я увижу большой экран.\
             На экране нарисованы минералы (камни).\
@@ -161,7 +161,7 @@ export class HistoryService {
         },
         {
             id: 21,
-            img: "../../../assets/history/sh18.webp",
+            img: "../../../assets/history/history21.jpg",
             header: "Кинозал",
             text: "В зале музея есть кинозал.\
             Наблюдающий зала может пригласить нас посмотреть фильм про историю Екатеринбурга.\
@@ -171,7 +171,7 @@ export class HistoryService {
         },
         {
             id: 22,
-            img: "../../../assets/history/sh19.webp",
+            img: "../../../assets/history/history22.jpg",
             header: "Интерактивная книга",
             text: "В зале музея есть много экспонатов, которые можно потрогать.\
             Один из таких экспонатов – это интерактивная книга.\
@@ -181,14 +181,14 @@ export class HistoryService {
         },
         {
             id: 23,
-            img: "../../../assets/history/sh20.webp",
+            img: "../../../assets/history/history23.jpg",
             header: "Подъём на второй этаж",
             text: " Когда я закончу обзор первого этажа, я смогу подняться на второй этаж музея.\
             Я поднимусь по лестнице, которая находится за стеклянной дверью возле цветного указателя в холле первого этажа."
         },
         {
             id: 24,
-            img: "../../../assets/history/sh21.webp",
+            img: "../../../assets/history/history24.jpg",
             header: "Монеты",
             text: "На втором этаже очень интересно.\
             Здесь нас ждут экспонаты, которые можно трогать руками.\
@@ -205,13 +205,13 @@ export class HistoryService {
         },
         {
             id: 26,
-            img: "../../../assets/history/sh22.webp",
+            img: "../../../assets/history/history26.jpg",
             header: "Информация о макете",
             text: "Если я занесу ладонь над макетом здания, на экране будет написано про это здание."
         },
         {
             id: 27,
-            img: "../../../assets/history/sh23.webp",
+            img: "../../../assets/history/history27.jpg",
             header: "Выдвижные ячейки",
             text: "Вдоль стены я увижу ячейки с экспонатами.\
             Некоторые ячейки нужно выдвинуть самостоятельно.\
@@ -219,7 +219,7 @@ export class HistoryService {
         },
         {
             id: 28,
-            img: "../../../assets/history/sh24.webp",
+            img: "../../../assets/history/history28.jpg",
             header: "Стеллажи",
             text: "В зале музея очень много стеклянных стеллажей.\
             Я буду внимательно изучать экспонаты.\
@@ -227,21 +227,21 @@ export class HistoryService {
         },
         {
             id: 29,
-            img: "../../../assets/history/sh25.webp",
+            img: "../../../assets/history/history29.jpg",
             header: "Временная экспозиция",
             text: "В конце зала я увижу вход в другую экспозицию.\
             В этом зале находится временная экспозиция, она тоже очень интересная."
         },
         {
             id: 30,
-            img: "../../../assets/history/sh26.webp",
+            img: "../../../assets/history/history30.jpg",
             header: "Детский музейный центр",
             text: "Когда я закончу осмотр основной экспозиции на втором этаже, я перейду в детский музейный центр.\
             Вход в детский музейный центр находится посередине зала, к нему можно пройти от стеллажа со старинными монетами."
         },
         {
             id: 31,
-            img: "../../../assets/history/sh27.webp",
+            img: "../../../assets/history/history31.jpg",
             header: "Кресла для отдыха",
             text: "Около детского музейного центра расположены удобные кресла.\
             В кресле я могу посидеть и отдохнуть. "

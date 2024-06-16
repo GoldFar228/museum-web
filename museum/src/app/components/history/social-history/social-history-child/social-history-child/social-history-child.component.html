@@ -1,8 +1,10 @@
-<div class="history-container" [ngStyle]="{'background-image': 'url(' + socialHistory.img + ')', 'background-position': getBackgroundPosition()}">
-    <div class="history-item">
-        <div class="history-header">{{socialHistory.header}}</div>
-        <div class="history-content">
-            {{socialHistory.text}}
-        </div>
+<div class="history-container" [ngStyle]="{'background-image': 'url(' + (isImageLoaded ? socialHistory.img : '') + ')', 'background-position': getBackgroundPosition()}">
+    <div *ngIf="!isImageLoaded" class="loading-text">Загрузка...</div>
+    <div class="history-item" *ngIf="isImageLoaded">
+      <div class="history-header">{{ socialHistory.header }}</div>
+      <div class="history-content">
+        {{ socialHistory.text }}
+      </div>
     </div>
-</div>
+    <img [src]="socialHistory.img" (load)="onImageLoad()" class="hidden-image" loading="lazy">
+  </div>
