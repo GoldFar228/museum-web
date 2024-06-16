@@ -1,4 +1,4 @@
-import { Component, Input, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { PanelComponent } from "../../../../../reusableComonents/panel/panel.component";
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
     styleUrl: './social-history-child.component.css',
     imports: [PanelComponent, CommonModule]
 })
-export class SocialHistoryChildComponent {
+export class SocialHistoryChildComponent implements OnInit {
   @Input()
   socialHistory;
   @Input() historyId: number
